@@ -1,0 +1,13 @@
+<h1>New review</h1>
+
+<%= form_for(@review) do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.label :rating %>
+  <%= f.text_field :rating %>
+  <%= f.label :restaurant_id %>
+  <%= f.text_field :restaurant_id %>
+  <%= f.submit %>
+<% end %>
+
+<p> <%= link_to "View reviews", reviews_path %></p>
